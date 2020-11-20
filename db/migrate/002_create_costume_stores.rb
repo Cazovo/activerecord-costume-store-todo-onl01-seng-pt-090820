@@ -2,7 +2,7 @@
 
 class CreateCostumeStores < ActiveRecord::Migration[5.2]
 
- def change
+    def change
         create_table :costume_stores do |t|
             t.text  :name
             t.string  :location
@@ -14,4 +14,6 @@ class CreateCostumeStores < ActiveRecord::Migration[5.2]
 
             t.timestamps null:false
         end 
-end
+    end 
+
+end 
