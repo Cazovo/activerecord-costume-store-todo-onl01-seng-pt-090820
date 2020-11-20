@@ -1,7 +1,8 @@
 # Create your haunted_houses migration here
+class CreateHauntedHouses < ActiveRecord::Migration[5.2]
 
 
- def change
+    def change
         create_table :haunted_houses do |t|
             t.text  :name
             t.string  :location
@@ -14,5 +15,6 @@
 
             t.timestamps null:false
         end 
- end 
+    end 
 
+end 
